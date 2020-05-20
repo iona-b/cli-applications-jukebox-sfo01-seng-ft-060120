@@ -19,8 +19,7 @@ def play(songs)
     if song_title == user_response
       puts "Playing #{user_response}"
     elsif user_response.to_i < songs.length
-      user_response.to_i
-      puts "Playing #{songs[user_response]}"
+      puts "Playing #{songs[user_response.to_i]}"
     end
     binding.pry
   end
