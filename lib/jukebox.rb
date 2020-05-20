@@ -1,7 +1,5 @@
 require 'pry'
 
-binding.pry 
-
 def help
   puts "I accept the following commands:"
   puts "- help : displays this help message"
@@ -11,6 +9,7 @@ def help
 end
 
 def list(songs)
+  binding.pry
   [songs].each_with_index { |val,index| puts "#{index + 1}. #{val}" }
   puts songs
 end
