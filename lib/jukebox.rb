@@ -7,10 +7,9 @@ def help
   puts "- play : lets you choose a song to play"
   puts "- exit : exits this program"
 end
-
+  binding.pry
 def list(songs)
   songs = songs.each_with_index { |val,index| puts "#{index + 1}. #{val}" }
-  binding.pry
 end
 
 def play(songs)
