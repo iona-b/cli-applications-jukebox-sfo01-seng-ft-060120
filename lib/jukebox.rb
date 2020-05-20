@@ -31,7 +31,7 @@ def play(songs)
       puts "Playing #{songs[(user_response.to_i - 1)]}"
   else 
     songs.each do |song_title|
-      if songs.include? 
+      if songs.include?(user_response)
         puts "Playing #{user_response}"
       else
         puts "Invalid input, please try again"
