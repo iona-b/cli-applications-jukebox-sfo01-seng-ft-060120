@@ -9,7 +9,7 @@ def help
 end
 
 def list(songs)
-  songs_w_index = songs.each_with_index { |val,index| puts "#{index + 1}. #{val}" }
+  songs_w_index = songs.each_with_index { |val,index| return "#{index + 1}. #{val}" }
   binding.pry
 end
 
