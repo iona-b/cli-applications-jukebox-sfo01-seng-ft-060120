@@ -14,10 +14,11 @@ def list(songs)
 end
 
 def play(songs)
+  list
+  binding.pry
   puts "Please enter a song name or number:"
   user_response = gets.strip
   songs.each do |index, song_title|
-    # binding.pry
     if index == user_response
       return "Playing #{user_response}"
     end
