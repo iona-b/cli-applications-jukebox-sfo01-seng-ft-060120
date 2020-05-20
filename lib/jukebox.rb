@@ -10,8 +10,6 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-require 'pry'
-
 def help
   puts "I accept the following commands:"
   puts "- help : displays this help message"
