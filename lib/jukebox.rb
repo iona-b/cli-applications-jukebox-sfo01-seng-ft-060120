@@ -31,13 +31,13 @@ def play(songs)
       puts "Playing #{songs[(user_response.to_i - 1)]}"
   else 
     songs.each do |song_title|
-      if song_title == user_response
+      if songs.include? 
         puts "Playing #{user_response}"
-      elsif 
+      else
+        puts "Invalid input, please try again"
       end
-      #binding.pry
+    
   end
-    return "Invalid input, please try again"
 end
 
 def exit_jukebox
