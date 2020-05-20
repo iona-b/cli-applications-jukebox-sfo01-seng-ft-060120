@@ -10,12 +10,10 @@ end
 
 def list(songs)
   songs.each_with_index { |val,index| puts "#{index + 1}. #{val}" }
-  # binding.pry
+  binding.pry
 end
 
 def play(songs)
-  list
-  binding.pry
   puts "Please enter a song name or number:"
   user_response = gets.strip
   songs.each do |index, song_title|
