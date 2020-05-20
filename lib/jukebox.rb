@@ -45,6 +45,7 @@ def run(songs)
   puts "Please enter a command: "
   command = gets.strip
   
+  while command !== 
   if command == "help"
     help
   elsif command == "list"
