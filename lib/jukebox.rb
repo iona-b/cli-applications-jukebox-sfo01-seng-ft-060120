@@ -17,12 +17,12 @@ def play(songs)
   user_response = gets.strip
   songs.each do |index, song_title|
     binding.pry
-    if song = user_response
+    if song == user_response
       player_response =  "Playing #{user_response}"
     end
   end
-  if player_response = ""
-    player_response = "Invalid input, please try again"
+  if player_response == ""
+    player_response == "Invalid input, please try again"
   end
   puts player_response
 end
@@ -36,13 +36,13 @@ def run(songs)
   puts "Please enter a command: "
   command = gets.strip
   
-  if command = "help"
+  if command == "help"
     help
-  elsif command = "list"
+  elsif command == "list"
     list
-  elsif command = "play"
+  elsif command == "play"
     play
-  elsif command = "exit"
+  elsif command == "exit"
     exit_jukebox
   else
     "Please enter a valid command: "
