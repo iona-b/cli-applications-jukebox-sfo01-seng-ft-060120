@@ -17,7 +17,7 @@ def play(songs)
   user_response = gets.strip
   songs.each do |index, song_title|
     # binding.pry
-    if song == user_response
+    if index == user_response
       player_response =  "Playing #{user_response}"
     end
   end
