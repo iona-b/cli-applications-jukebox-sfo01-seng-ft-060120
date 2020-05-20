@@ -10,6 +10,7 @@ end
 
 def list(songs)
   songs.each_with_index { |val,index| puts "#{index + 1}. #{val}" }
+  binding.pry
 end
 
 def play(songs)
