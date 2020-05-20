@@ -15,10 +15,11 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.strip
-  songs.each do |index, song_title|
-    if index == user_response
+  songs.each do |song_title|
+    if song_title == user_response
       return "Playing #{user_response}"
     end
+    binding.pry
   end
     return "Invalid input, please try again"
 end
