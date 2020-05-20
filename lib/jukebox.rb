@@ -21,9 +21,7 @@ def play(songs)
       return "Playing #{user_response}"
     end
   end
-  if player_response == ""
-    player_response == "Invalid input, please try again"
-  end
+    return "Invalid input, please try again"
   puts player_response
 end
 
