@@ -59,6 +59,8 @@ command = "help"
       exit_jukebox
     else
       "Please enter a valid command: "
+    end
+    
   end
   
 end
