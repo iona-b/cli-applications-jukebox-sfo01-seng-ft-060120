@@ -42,6 +42,8 @@ end
 
 def run(songs)
   
+help
+
 command = "help"
   
   while command != "exit"
