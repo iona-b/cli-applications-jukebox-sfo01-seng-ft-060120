@@ -10,13 +10,13 @@ end
 
 def list(songs)
   songs.each_with_index { |val,index| puts "#{index + 1}. #{val}" }
-  # binding.pry
 end
 
 def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.strip
   songs.each do |index, song_title|
+    binding.pry
     if song = user_response
       player_response =  "Playing #{user_response}"
     end
