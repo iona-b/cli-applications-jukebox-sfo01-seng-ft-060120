@@ -17,7 +17,9 @@ def play(songs)
   user_response = gets.strip
   songs.each do |song_title|
     if song_title == user_response
-      return "Playing #{user_response}"
+      puts "Playing #{user_response}"
+    elsif user_response.to_i < songs.length
+      puts "Playing #{songs[user_response]}"
     end
     binding.pry
   end
