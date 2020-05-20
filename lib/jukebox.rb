@@ -18,10 +18,10 @@ def play(songs)
   songs.each do |song_title|
     if song_title == user_response
       puts "Playing #{user_response}"
-    elsif user_response.to_i < songs.length
+    elsif user_response.to_i > 0 && user_response.to_i < songs.length
       puts "Playing #{songs[user_response.to_i]}"
     end
-    binding.pry
+    #binding.pry
   end
     return "Invalid input, please try again"
 end
