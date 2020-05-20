@@ -9,8 +9,10 @@ def help
 end
 
 def list(songs)
-  songs = [songs].each_with_index { |val,index| puts "#{index + 1}. #{val}" }
+  songs = [songs].each_with_index do |val,index|
+    puts "#{index + 1}. #{val}"
   binding.pry
+  end
   puts songs
 end
 
