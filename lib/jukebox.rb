@@ -10,6 +10,8 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
+require 'pry'
+
 def help
   puts "I accept the following commands:"
   puts "- help : displays this help message"
@@ -31,6 +33,8 @@ def play(songs)
       puts "Playing #{user_response}"
   else
       puts "Invalid input, please try again"
+      end
+    
   end
 end
 
@@ -40,27 +44,19 @@ end
 
 def run(songs)
   
-help
-
-command = "help"
-  
-  while command != "exit"
-  
   puts "Please enter a command: "
   command = gets.strip
   
-    if command == "help"
-      help
-    elsif command == "list"
-      list(songs)
-    elsif command == "play"
-      play(songs)
-    elsif command == "exit"
-      exit_jukebox
-    else
-      "Please enter a valid command: "
-    end
-    
+  if command == "help"
+    help
+  elsif command == "list"
+    list
+  elsif command == "play"
+    play
+  elsif command == "exit"
+    exit_jukebox
+  else
+    "Please enter a valid command: "
   end
   
 end
